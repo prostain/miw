@@ -58,7 +58,7 @@ html,body
 .content-bloc-text
 {
     display: inline-block;
-    width:80%;
+    width:79%;
 }
 .content-bloc-image
 {
@@ -72,7 +72,7 @@ html,body
 
 .tete-chat
 {
-    width: 70%;
+    width: 90%;
     height: auto;
     background-color: #090954;
 
