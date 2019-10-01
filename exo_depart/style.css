@@ -9,9 +9,9 @@ html,body
 
 .my-head
 {
-    background-color: blue;
+    background-color: #090954;
     color: white;
-    padding: 0.25% 0 0.25% 25%;
+    padding: 0.25% 0 0.25% 15%;
 }
 
 .div-title
@@ -22,36 +22,70 @@ html,body
     color: white;
     padding: 3% 0;
 }
-.div-info
+.content
 {
     width: 70%;
-    margin: auto;
+    padding: 1% 15%;
+
+}
+.content-form
+{
+    display: inline-block;
+    width: 29%;
+}
+.card
+{
+    border: 1px solid #DDDDDD;
+}
+.content-image
+{
+    display: inline-block;
+    width: 70%;
+}
+.my-chat
+{
+    width: 80%;
+    height: auto;
+}
+
+.div-info
+{
+    background-color: #DDDDDD;
+    padding: 1% 15%;
+
 }
 
 .content-bloc-text
 {
     display: inline-block;
-    width:60%;
+    width:80%;
 }
 .content-bloc-image
 {
     display: inline-block;
-    width: 30%;
+    width: 20%;
     height: auto;
+    text-align: right;
 
 }
 
 
 .tete-chat
 {
-    width: 40%;
+    width: 70%;
     height: auto;
+    background-color: #090954;
 
 }
 .my-footer
 {
-    background-color: blue;
+    background-color: #090954;
     color: white;
     text-align: right;
-    padding: 0.15% 0.15% 0.15% 0;
+    padding: 0.15% 0.5% 0.15% 0;
+}
+
+input
+{
+    display: block;
 }
