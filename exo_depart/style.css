@@ -1,0 +1,57 @@
+html,body
+{
+    border: 0;
+    margin: 0;
+    top: 0;
+    max-width: 100%;
+}
+
+
+.my-head
+{
+    background-color: blue;
+    color: white;
+    padding: 0.25% 0 0.25% 25%;
+}
+
+.div-title
+{
+    background-image: url("img/background.jpg");
+    min-height: 20%;
+    text-align: center;
+    color: white;
+    padding: 3% 0;
+}
+.div-info
+{
+    width: 70%;
+    margin: auto;
+}
+
+.content-bloc-text
+{
+    display: inline-block;
+    width:60%;
+}
+.content-bloc-image
+{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+
+}
+
+
+.tete-chat
+{
+    width: 40%;
+    height: auto;
+
+}
+.my-footer
+{
+    background-color: blue;
+    color: white;
+    text-align: right;
+    padding: 0.15% 0.15% 0.15% 0;
+}
