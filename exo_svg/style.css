@@ -1,0 +1,14 @@
+
+svg
+{
+    width: 100%;
+    height: 50%;
+    fill:blue;
+}
+
+svg:hover
+{
+
+    fill:red;
+}
+d pach
