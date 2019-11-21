@@ -1,0 +1,98 @@
+nav {
+  width: 100%;
+  min-height: 56px;
+  padding: 0 5%;
+  background-color: aquamarine;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+nav ul li {
+  list-style: none;
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #0D1E4C;
+  padding: 1em;
+}
+
+.button {
+  /*makes the button visible*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68px;
+  height: auto;
+  /*since we are here, we can style it a little bit!*/
+  font-size: 3vh;
+  border: none;
+  /*outline none removes the default blue border that appears anytime you click on the button*/
+  outline: none;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.button img {
+  width: 68px;
+  height: auto;
+}
+
+nav ul li a:hover {
+  color: #383333;
+  border-bottom: 3px solid #383333;
+  /* border-top: 3px solid #383333;*/
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  padding: 1%;
+  text-align: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  float: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+nav ul li {
+  margin-right: 2px;
+  list-style: none;
+}
+
+#myLinks {
+  display: none;
+}
+
+@media screen and (min-width: 1020px) {
+  #myLinks {
+    display: -webkit-box;
+    display: flex;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+  .button {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mon_site.css.map */

@@ -1,0 +1,86 @@
+
+$mobile_size : 370px;
+$laptop_size : 1020px;
+
+nav{
+    width: 100%;
+    min-height: 56px;
+    padding: 0 5%;
+    background-color: aquamarine;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    float: none;
+}
+
+
+nav ul li {
+
+    list-style: none;
+    width: 100%;
+
+
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #0D1E4C;
+    padding: 1em;
+
+}
+
+nav ul li a:hover {
+    color: #383333;
+    border-bottom: 3px solid #383333;
+    /* border-top: 3px solid #383333;*/
+    text-decoration: none;
+}
+
+
+.button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 68px;
+    height: auto;
+    font-size: 3vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+.button img{
+    width: 68px;
+    height: auto;
+
+}
+
+
+
+
+
+#myLinks
+{
+    display: none;
+}
+
+@media screen and (min-width: $laptop_size) {
+    #myLinks
+    {
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .button{
+        display: none;
+    }
+
+
+
+}
+

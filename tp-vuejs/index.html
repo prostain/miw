@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eval Layout menu</title>
+    <link rel="stylesheet" href="css/reset_css.css">
+    <link rel="stylesheet" href="css/mon_site.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<h1>Hello ! </h1>
+<div id="app">
+    {{ message }}
+
+    <div v-html="toto"> coucou</div>
+
+    <h1 v-if="ok">Vue est extraordinaire ! 😄</h1>
+    <h1 v-else>Oh non </h1>
+    <span v-for="(letter,i) in table" :key="i">{{letter}}</span>
+</div>
+
+<div id="vbox">
+    <div class="bloc">
+        <p class="explication">
+            Select choix multiple
+        </p>
+        <select v-model="selected" multiple>
+            <option disabled value="">Choisissez</option>
+            <option v-for="(i, index) in options" :key="index">{{i.text}}</option>
+        </select>
+        <span>Sélectionné : {{ selected }}</span>
+    </div>
+
+    <div class="conteur">
+        <button @click="count">Appuyez ici</button>
+        <span>On va compter : {{ conteur }}</span> <input v-model="max">
+        <h2 v-if="conteur >= max">Boom vous avez attein le max 😢</h2>
+    </div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            ok: true,
+            table :['s','n','o','w','w']
+        }
+    });
+
+    let vm = new Vue({
+        el: '#vbox',
+        data: {
+            options: [
+                {text: 'Un', value: 'A'},
+                {text: 'Deux', value: 'B'},
+                {text: 'Trois', value: 'C'}
+            ],
+            selected: [],
+            conteur:0,
+            max:10,
+        },
+        methods :{
+            count : function () {
+                if (this.conteur < this.max)
+                {
+                    this.conteur +=1
+                }
+            }
+        }
+    });
+
+
+</script>
+
+
+</div>
+
+</body>
+</html>
